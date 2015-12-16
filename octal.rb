@@ -9,7 +9,7 @@ class Octal
 	end
 
 	def not_valid?
-		 octnum == '0' || octnum =~/[A-Fa-f8-9]/
+		 octnum == '0' || octnum =~ /[A-Fa-f8-9]/
 	end
 
 	def to_decimal
