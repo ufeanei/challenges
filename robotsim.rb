@@ -88,7 +88,7 @@ end
 
 robot1 = Robot.new
 simulator = Simulator.new
-simulator.place(robot1, -5, 0, 'west')
+simulator.place(robot1, 0, 0, 'west')
 
 puts " enter your robot instruction"
 answer = gets.chomp

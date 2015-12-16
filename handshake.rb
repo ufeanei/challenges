@@ -23,10 +23,8 @@ class SecrethHandshake
     handshake = ['jump', 'close your eyes', 'double blink','wink'] if revbin[4] == '1'
 
     handshake
-    
   end
 end
-
 
 c =SecrethHandshake.new(2)
 

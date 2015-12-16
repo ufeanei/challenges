@@ -43,7 +43,6 @@ z = Triplet.where(max_factor: 100, sum: 180)
 
  a = z.map(&:product)
 
-# puts "#{}"
 
 puts "#{a}"
 
