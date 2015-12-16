@@ -17,12 +17,10 @@ class Octal
 		return sum if not_valid?
 		oct_reverse = octnum.reverse
 		for i in 0...oct_reverse.size
-			sum += (oct_reverse[i].to_i)* 8**i
+			sum += oct_reverse[i].to_i* 8**i
 		end
 		sum
 	end
-
-
 end
 
-a = Octal.new('ab23')
+
