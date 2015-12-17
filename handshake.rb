@@ -4,7 +4,7 @@ class SecrethHandshake
   attr_accessor :bin
 
   def initialize(num)
-     @bin = num.to_i.to_s == '0' ? [] : num.to_i.to_s(2) # guard against 0, letter strings
+    @bin = num.to_i.to_s == '0' ? [] : num.to_i.to_s(2) # guard against 0, letter strings
   end
 
   def wrong_input_message
