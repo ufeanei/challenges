@@ -7,13 +7,10 @@ class SecretHandshake
     @bin = num.to_i.to_s == '0' ? [] : num.to_i.to_s(2) # guard against 0, letter strings
   end
 
-  def wrong_input_message
-    #puts "Input must be decimal number or decimal number string excluding zero"
-    puts "#{bin}"
-  end
+  
 
   def commands
-    return wrong_input_message if bin == []
+    return bin if bin == []
     
     shake = []
     revbin = bin.reverse # using reverse! here produces weird results from line 45 to 48
