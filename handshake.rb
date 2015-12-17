@@ -8,14 +8,14 @@ class SecrethHandshake
   end
 
   def wrong_input_message
-  	puts "Input must be decimal number or decimal number string excluding zero"
+    puts "Input must be decimal number or decimal number string excluding zero"
   end
 
   def commands
-  	return wrong_input_message if bin == []
-  	
-  	handshake = []
-  	revbin = bin.reverse # using reverse! here produces weird results from line 45 to 48
+    return wrong_input_message if bin == []
+    
+    handshake = []
+    revbin = bin.reverse # using reverse! here produces weird results from line 45 to 48
     handshake << 'wink' if revbin[0] =='1'
     handshake << 'double blink' if revbin[1] == '1'
     handshake << 'close your eyes' if revbin[2] == '1'
@@ -47,6 +47,6 @@ puts "#{a.commands}"
 
 binding.pry
   
-  	
+    
   
   
