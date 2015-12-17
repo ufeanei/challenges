@@ -1,5 +1,3 @@
-require 'pry'
-
 
 class Octal
 	attr_accessor :octnum
