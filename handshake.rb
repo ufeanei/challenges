@@ -1,6 +1,6 @@
 require 'pry'
 
-class SecrethHandshake
+class SecretHandshake
   attr_accessor :bin
 
   def initialize(num)
@@ -8,45 +8,26 @@ class SecrethHandshake
   end
 
   def wrong_input_message
-    puts "Input must be decimal number or decimal number string excluding zero"
+    #puts "Input must be decimal number or decimal number string excluding zero"
+    puts "#{bin}"
   end
 
   def commands
     return wrong_input_message if bin == []
     
-    handshake = []
+    shake = []
     revbin = bin.reverse # using reverse! here produces weird results from line 45 to 48
-    handshake << 'wink' if revbin[0] =='1'
-    handshake << 'double blink' if revbin[1] == '1'
-    handshake << 'close your eyes' if revbin[2] == '1'
-    handshake << 'jump' if revbin[3] == '1'
-    handshake = ['jump', 'close your eyes', 'double blink','wink'] if revbin[4] == '1'
+    shake << 'wink' if revbin[0] =='1'
+    shake << 'double blink' if revbin[1] == '1'
+    shake << 'close your eyes' if revbin[2] == '1'
+    shake << 'jump' if revbin[3] == '1'
+    shake = ['jump', 'close your eyes', 'double blink','wink'] if revbin[4] == '1'
 
-    handshake
+    shake
   end
 end
 
-c =SecrethHandshake.new(2)
 
-puts c.bin
-
-puts "#{c.commands}"
-
-b = SecrethHandshake.new('4')
-
-puts b.bin
-puts "#{b.commands}"
-
-a = SecrethHandshake.new(0)
-
-puts a.bin
-puts "#{a.commands}"
-puts "#{a.commands}"
-puts "#{a.commands}"
-puts "#{a.commands}"
-
-binding.pry
-  
     
   
   
