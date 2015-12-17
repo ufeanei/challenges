@@ -18,7 +18,7 @@ class SecretHandshake
     shake << 'double blink' if revbin[1] == '1'
     shake << 'close your eyes' if revbin[2] == '1'
     shake << 'jump' if revbin[3] == '1'
-    shake = ['jump', 'close your eyes', 'double blink','wink'] if revbin[4] == '1'
+    shake.reverse! if revbin[4] == '1'
 
     shake
   end
